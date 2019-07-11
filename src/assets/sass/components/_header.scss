@@ -1,0 +1,40 @@
+header{
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    background-color: $color-light-alpha;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 10;
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+        a{
+            padding: .5em 1em;
+        }
+        .logo{
+            span{
+                color: $color-primary;
+            }
+        }
+        .menu{
+            font-weight: 400;
+            font-size:0.8em;
+        }
+        .action{
+            font-size:0.8em;
+            .button{
+                border-radius: 5px;
+                display: inline-block;
+                line-height: 32px;
+                font-weight: 400;
+                box-shadow: $shadow-light-small;
+            }
+        }
+    }
+}

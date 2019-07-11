@@ -1,0 +1,28 @@
+$color-primary: #540ffa;
+$color-light: #fff;
+$color-dark: #000;
+$color-dark-grey: #141414;
+$color-light-purple: #7224dc;
+$color-dark--purple: #3a27db;
+$color-light-orange: #f2b017;
+$color-dark-orange: #fa4f2d;
+$color-light-blue: #32e3fa;
+$color-dark-blue: #3232f4;
+$color-light-alpha: #fffffff2;
+$color-light-alpha-purple: #7224dcf2;
+$color-dark-alpha-purple: #3a27dbf2;
+
+$gradient-purple: linear-gradient(90deg, $color-light-purple 0%, $color-dark--purple 100%);
+$gradient-orange: linear-gradient(90deg, $color-light-orange 0%, $color-dark-orange 100%);
+$gradient-blue: linear-gradient(90deg, $color-light-blue 0%, $color-dark-blue 100%);
+$gradient-purple-alpha: linear-gradient(90deg, $color-light-alpha-purple 0%, $color-dark-alpha-purple 100%);
+
+$shadow-lightest-small: 0 0 5px rgba(0, 0, 0, 0.1);
+$shadow-light-small: 0 0 5px rgba(0, 0, 0, 0.3);
+$shadow-light-small-offset: 0px 2px 5px rgba(0, 0, 0, 0.3);
+$shadow-light-big-offset: 0px 3px 15px -5px rgba(0,0,0,0.2);
+$shadow-light-big: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+
+$sans-serif: 'Roboto', sans-serif;
+
+$animationSpeed: 40s;

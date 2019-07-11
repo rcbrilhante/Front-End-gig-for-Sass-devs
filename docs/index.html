@@ -7,15 +7,520 @@
     <title>gig-sass</title>
     <meta name="author" content="Altar.io">
     <link rel="icon" href="assets/images/shared/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <!-- css -->
     <link rel="stylesheet" type="text/css" href="assets/css/lib/normalize.css">
     <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
   </head>
   <body>
-    <h1>Code your awesomeness here...</h1>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="logo">Show<span>Trackr</span></pan></a>
+          <div class="menu hide-on-mobile">
+            <a href="#">Features</a>
+            <a href="#">Community</a>
+            <a href="#">Get Started</a>
+          </div>
+          <div class="action">
+            <a class="hide-on-mobile">Login</a>
+            <a class="button">Get Started</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="row">
+            <div class="half">
+              <h1>Track your shows automatically</h1>
+              <div class="content">
+                <p>With ShowTrackr you can track your favorite TV shows automatically,
+                    so you never loose track of your TV shows ever again
+                </p>
+                <form class="subscription">
+                  <div>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="your@email.com">
+                    <button>Start tracking</button>
+                  </div>
+                </form>
+                <div class="available">
+                  <p>Compatible with</p>
+                  <div class="logos">
+                    <span><img src="assets/images/brand-netflix.png"></span>
+                    <span><img src="assets/images/brand-apple.png"></span>
+                    <span><img src="assets/images/brand-android.png"></span>
+                    <span><img src="assets/images/brand-windows.png"></span>
+                    <span><img src="assets/images/brand-synology.png"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="half">
+              <div class="txt-center content-img">
+                <img src="assets/images/mockup-app-iphone-x.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="row">
+            <div class="half txt-center-desktop">
+              <p class="no-margin-top">Features</p>
+              <h2>Built and customized for your habits</h2>
+              <p>ShowTrackr’s built-in machine learning and context-aware features guarantee that all the
+                notifications and recommendations are always delivered to you in the perfect moment.
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="third">
+              <div class="item">
+                <div class="icon track">
+                  <img src="assets/images/play.svg">
+                </div>
+                <h3 class="h6">Automated tracking</h3>
+                <p>Track your favorite shows automatically without switching between apps.</p>
+                <a>Learn more</a>
+              </div>
+            </div>
+            <div class="third">
+              <div class="item">
+                <div class="icon learn">
+                  <img src="assets/images/ml.svg">
+                </div>
+                <h3 class="h6">Machine learning</h3>
+                <p>Get recommendations like never before, which are truly customized for your taste.</p>
+                <a>Learn more</a>
+              </div>
+            </div>
+            <div class="third">
+              <div class="item">
+                <div class="icon notify">
+                  <img src="assets/images/Icon.svg">
+                </div>
+                <h3 class="h6">Smart notifications</h3>
+                <p>Receive smart notifications exactly at the right moments when you need them.</p>
+                <a>Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="series">
+        <div class="row">
+          <div class="wrapper">
+            <div class="item">
+              <img src="assets/images/cover-black-mirror.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-stranger-things.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-westworld.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-house-of-cards.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-game-of-thrones.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-flash.png">
+            </div>
+            <div class="item">
+                <img src="assets/images/cover-how-to-get-away-with-murder.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-black-mirror.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-stranger-things.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-westworld.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-house-of-cards.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-game-of-thrones.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-flash.png">
+            </div>
+            <div class="item">
+              <img src="assets/images/cover-how-to-get-away-with-murder.png">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-tab">
+        <div class="container">
+          <div class="row">
+            <input type="radio" name="tab-list" id="tab-item" class="tab-item1" checked>
+            <input type="radio" name="tab-list" id="tab-item2" class="tab-item2">
+            <input type="radio" name="tab-list" id="tab-item3" class="tab-item3">
+            <div class="half">
+              <h3>Easy-to-use interfaces on every platform</h3>
+              <div class="content">
+                <p>Since most of our features work in a completely automated way, you will mainly use our apps to discover new
+                  TV shows recommended for you and discuss the most interesting episodes with like-minded people.
+                </p>
+                <div class="tab-list">
+                  <div class="tab-link" id="tab-link1">
+                    <label for="tab-item" id="label1">Costumized dashboard</label>
+                  </div>
+                  <div class="tab-link" id="tab-link2">
+                    <label for="tab-item2" id="label2">Automatic Day & Night Modes</label>
+                  </div>
+                  <div class="tab-link" id="tab-link3">
+                    <label for="tab-item3" id="label3">Integrated Chat Platform</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="half">
+              <div class="tab-content">
+                <div class="item txt-center tab1">
+                  <img class="phone" src="assets/images/mockup-app-iphone-x.png">
+                  <img class="desktop hide-on-mobile" src="assets/images/mockup-app-desktop.png" >
+                </div>
+              </div>
+              <div class="tab-content"> 
+                <div class="item txt-center tab2">
+                  <img class="phone" src="assets/images/mockup-app-iphone-x-altar.png">
+                  <img class="desktop hide-on-mobile" src="assets/images/mockup-app-desktop.png">
+                </div>
+              </div>
+              <div class="tab-content">
+                <div class="item txt-center tab3">
+                  <img class="phone" src="assets/images/mockup-app-iphone-x.png">
+                  <img class="desktop hide-on-mobile" src="assets/images/mockup-app-desktop.png" >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="community">
+        <div class="container">
+          <div class="row">
+            <div class="half">
+              <div class="content">
+                <p>Community</p>
+                <h3>We believe in the power of community</h3>
+                <p>Our goal is to create a product and service that you’re satisfied with and use it every day.
+                  This is why we’re constantly working on our services to make it better every day and really
+                  listen to what our users has to say.
+                </p>
+                <a class="button">Read more testimonials</a>
+              </div>
+            </div>
+            <div class="half">
+              <div class="testimonials-row half">
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-bruce-murphy.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-crystal-perkins.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-andrew-cook.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-gregory-wallace.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-thomas-cruz.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
 
-    <!-- javaScript -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-bruce-murphy.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-crystal-perkins.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-andrew-cook.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-gregory-wallace.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-thomas-cruz.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials-row half hide-on-mobile">
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-bruce-murphy.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-crystal-perkins.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-andrew-cook.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-gregory-wallace.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-thomas-cruz.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-bruce-murphy.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-crystal-perkins.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-andrew-cook.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-gregory-wallace.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+                <div class="tweet">
+                  <div class="header">
+                    <div class="avatar"><img src="assets/images/person-thomas-cruz.png"></div>
+                    <div class="user">Bruce Murphy</div>
+                  </div>
+                  <div class="body">
+                    <p>I use ShowTrackr every day, and it’s awesome! I track all of my TV shows in it. :) </p>
+                  </div>
+                  <div class="footer">
+                    <p>Jan 18, 2019</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="started">
+        <div class="container">
+          <div class="row">
+            <div class="half txt-center">
+              <p>Get Started</p>
+              <h2>Start tracking your TV shows for free</h2>
+              <p>In order to start tracking your TV shows, all you have to do is enter your email address.
+                Everything else will be taken care of by us. All you have to do is sit back, relax and enjoy
+                your TV shows.
+              </p>
+              <form class="subscription">
+                <div>
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="your@email.com">
+                  <button>Start tracking</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="social">
+          <div class="container">
+            <div class="row">
+              <div class="half txt-center">
+                <a><svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19 1.89418C18.2885 2.22063 17.5339 2.43494 16.7612 2.53001C17.5648 2.02959 18.183 1.23876 18.4739 0.29506C17.7088 0.765557 16.8717 1.09704 15.9987 1.27518C15.262 0.459875 14.2317 -0.00193272 13.1538 6.08018e-06C11.002 6.08018e-06 9.25551 1.80801 9.25551 4.03832C9.25551 4.35523 9.28993 4.6641 9.35733 4.95902C6.11725 4.79033 3.24566 3.18317 1.3227 0.739337C0.986934 1.3351 0.795414 2.02959 0.795414 2.76992C0.795414 4.17046 1.48331 5.40682 2.52903 6.1312C1.9099 6.11154 1.30434 5.93829 0.763171 5.626V5.6775C0.763171 7.63373 2.10696 9.26614 3.88931 9.63794C3.31528 9.799 2.71341 9.82262 2.12927 9.70702C2.62552 11.3118 4.06556 12.4792 5.77057 12.5131C4.43672 13.5946 2.75619 14.2415 0.929478 14.2415C0.618863 14.2411 0.308525 14.2222 0 14.185C1.72489 15.3305 3.77428 16 5.97543 16C13.1453 16 17.0654 9.84469 17.0654 4.50683C17.0654 4.33224 17.0654 4.15764 17.0533 3.9843C17.8161 3.41243 18.4748 2.70473 18.9988 1.89418H19Z" fill="black"/>
+                  </svg>
+                </a>
+                <a>
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H13C14.6569 0 16 1.34315 16 3V13C16 14.6569 14.6569 16 13 16H3C1.34315 16 0 14.6569 0 13V3V3C0 1.34315 1.34315 0 3 0V0ZM11 10.4615H12.5556L13 8.38462H11V7C10.8945 6.41341 11.0596 5.99253 11.8889 6.07692H13V4C12.8118 4.0581 12.1663 4 11.4444 4C9.84705 4 8.7735 4.99412 8.77778 6.76923V8.38462H7V10.4615H8.77778V16H11V10.4615Z" fill="black"/>
+                  </svg>   
+                </a>
+                <a>
+                  <svg width="22" height="16" viewBox="0 0 22 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.55556 11.4294V4.57175L14.6667 8.012L8.55556 11.4294ZM21.78 3.45168C21.78 3.45168 21.5649 1.88356 20.9061 1.19323C20.0689 0.286878 19.1314 0.283449 18.7012 0.230874C15.6237 0 11.0061 0 11.0061 0H10.9963C10.9963 0 6.37756 0 3.3 0.230874C2.86856 0.283449 1.93111 0.288021 1.09389 1.19323C0.433889 1.88356 0.22 3.45168 0.22 3.45168C0.22 3.45168 0 5.29181 0 7.13194V8.86006C0 10.7002 0.22 12.5403 0.22 12.5403C0.22 12.5403 0.433889 14.1096 1.09389 14.7999C1.93111 15.7051 3.02989 15.6765 3.52 15.7714C5.28 15.9463 11 16 11 16C11 16 15.6224 15.9931 18.7 15.7623C19.1314 15.7097 20.0689 15.7051 20.9061 14.7988C21.5661 14.1073 21.78 12.5392 21.78 12.5392C21.78 12.5392 22 10.699 22 8.85892V7.13194C22 5.29181 21.78 3.45168 21.78 3.45168Z" fill="black"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="tiny-txt">Copyright © 2018 All rights reserved - Designed by Daniel Korpai</p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

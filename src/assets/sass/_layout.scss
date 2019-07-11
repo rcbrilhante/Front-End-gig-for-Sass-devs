@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+h1{
+    font-size: 3.815em;
+}
+
+h2{
+    font-size: 3.052em;
+}
+
+h3{
+    font-size: 2.441em;
+}
+
+h4{
+    font-size: 1.953em;
+}
+
+h5{
+    font-size: 1.563em;
+}
+
+h6, .h6{
+    font-size: 1.25em;
+}
+
+.tiny-txt{
+    font-size: 0.8em;
+}
+
+@media (max-width: 767px){
+    h1{
+        font-size: 2.441em;
+    }
+    
+    h2{
+        font-size: 1.953em;
+    }
+
+    h3{
+        font-size: 1.563em;
+    }
+
+    h6, .h6{
+        font-size: 1em;
+    }
+
+    .tiny-txt{
+        font-size: 0.64em;
+    }
+}
+
+a{
+    text-decoration: unset;
+    color: unset; 
+}
+
+p{
+    line-height: 1.5em;
+    font-weight: 100;
+}
+
+body{
+    font-family: $sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    @media (max-width: 767px){
+        max-width: 650px;
+    }
+}
+
+main{
+    a{
+        color: $color-primary;
+    }
+}
+
+section{
+    position: relative;
+    overflow: hidden;
+    padding: 80px 0;
+    @media (max-width: 767px){
+        padding: 40px 0;
+    }
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.half{
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0px 16px;
+    @media (max-width: 767px){
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.third{
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+    padding: 0px 16px;
+    @media (max-width: 767px){
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+.no-margin-top{
+    margin-top:0;
+}
+
+.txt-center, .txt-center-desktop{
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+@media (max-width: 767px){
+    .hide-on-mobile{
+        display:none !important;
+    }
+    .txt-center-desktop{
+        text-align: left;
+    }
+}
+
+.button{
+    line-height: 40px;
+    color: $color-light;
+    background-color: $color-primary;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.subscription{
+    position: relative;
+    padding: 1em 0;
+    label{
+        position: absolute;
+        padding-left: 10px;
+        padding-top:8px;
+        font-size: 10px;
+        color: $color-primary;
+        font-weight: bold;
+    }
+    input{
+        width:100%;
+        padding: 22px 0 8px 10px;
+        border:none;
+        border-radius: 5px;
+        box-shadow: $shadow-lightest-small;
+    }
+    button{
+        position: absolute;
+        top: 1em;
+        right:0;
+        padding:15px;
+        border:none;
+        background-color: $color-primary;
+        color: $color-light;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+}

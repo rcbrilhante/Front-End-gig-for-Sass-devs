@@ -1,0 +1,15 @@
+footer{
+    text-align: center;
+    opacity: 0.3;
+    .half{
+        padding: 20px 16px;
+    }
+    .social{
+        a{
+            width: 18px;
+            height: 18px;
+            margin: 0 15px;
+            display: inline-block;
+        }
+    }
+}

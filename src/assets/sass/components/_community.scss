@@ -1,0 +1,88 @@
+.community{
+    padding:0;
+    background-color: $color-dark;
+    color: $color-light;
+    overflow: hidden;
+
+    @media (max-width: 767px){
+        padding:70px 0;
+    }    
+
+    .row{
+        align-items: center;
+        .content{
+            width:85%;
+            padding-bottom: 30px;
+        }
+    }
+    
+    @keyframes testimonials-y {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(calc(-200px * 5))}
+    }
+
+    @keyframes testimonials-x {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-280px * 5))}
+    }
+
+    .testimonials-row{
+        flex-direction: column;
+        display: flex;
+        height:700px;
+        @media (max-width: 767px){
+            height: auto;
+        }
+        animation: testimonials-y $animationSpeed linear infinite;
+        &:first-child{
+            float:left;
+            animation-direction: reverse;
+            @media (max-width: 767px){
+                animation-direction: normal;
+            }
+        }
+        &.half{
+            padding:0;
+        }
+        @media (max-width: 767px){
+            flex-direction: row;
+            animation: testimonials-x $animationSpeed linear infinite;
+        }
+        .tweet{
+            padding:10px;
+            font-size: 0.8em;
+            background-color: $color-dark-grey;
+            margin: 10px;
+            border-radius: 5px;
+            height:180px;
+            @media (max-width: 767px){
+                min-width: 260px;
+            }
+            .header{
+                display: flex;
+                align-items: center;
+                .avatar{
+                    width: 38px;
+                    height: 38px;
+                    img{
+                        border-radius: 50%;
+                        width: 100%;
+                    }
+                }
+                .user{
+                    padding-left:20px;
+                }
+            }
+            .body{
+                overflow: hidden;
+            }
+            .footer{
+                opacity: 0.5;
+            }
+        }
+    }
+
+
+    
+      
+}
